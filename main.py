@@ -31,11 +31,11 @@ x_range = np.arange(28)
 for i in range(28):
     # Plot digit 2 in blue
     mask_2 = (filtered_labels == 2)
-    axes[i].plot(x_range, all_images[mask_2, i, :].T, alpha=0.5, color='blue', label='2')
+    axes[i].plot(x_range, all_images[mask_2, i, :].T, alpha=0.1, color='blue', label='2')
     
     # Plot digit 7 in red
     mask_7 = (filtered_labels == 7)
-    axes[i].plot(x_range, all_images[mask_7, i, :].T, alpha=0.5, color='red', label='7')
+    axes[i].plot(x_range, all_images[mask_7, i, :].T, alpha=0.1, color='red', label='7')
     
     #axes[i].set_ylabel(f'Row {i+1}')
     axes[i].set_yticks([])
@@ -44,5 +44,5 @@ for i in range(28):
 #plt.xlabel("Pixel Index in Row")
 plt.suptitle("Parallel Coordinates Visualization of MNIST Digits 2 (blue) and 7 (red) Row-by-Row")
 plt.tight_layout()
-plt.savefig('mnist_visualization_2_7.png', dpi=300, bbox_inches='tight')
+plt.savefig('mnist_visualization_2_7_alpha.png', dpi=300, bbox_inches='tight')
 plt.close()
