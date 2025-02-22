@@ -4,7 +4,7 @@ Under development novel visualization method using Parallel Coordinates for visu
 
 Example of MNIST digits 2 and 7 whole classes plotted.
 
-![MNIST 2 and 7 Example](mnist_visualization_2_7.png)
+![MNIST 2 and 7 Example](mnist_visualization_2_7_alpha.png)
 
 ## License
 
